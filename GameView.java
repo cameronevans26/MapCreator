@@ -193,7 +193,7 @@ class GameView extends JPanel
 		g2d.setFont(font);
 		g2d.setColor(Color.BLACK); // Choose your text color
 		// Draw the text at position (x, y)
-		String text = "I chose easy movement (keys)";
+		String text = "Use keys to move around the map";
 		int x1 = 300 - horizontalScroll; // Adjust the x-coordinate
 		int y1 = 300 - verticalScroll; // Adjust the y-coordinate
 		g2d.drawString(text, x1, y1);
