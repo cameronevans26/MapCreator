@@ -1,8 +1,3 @@
-// ----------------------------------------------------------------
-// The contents of this file are distributed under the CC0 license.
-// See http://creativecommons.org/publicdomain/zero/1.0/
-// ----------------------------------------------------------------
-
 import java.util.ArrayList;
 import java.lang.StringBuilder;
 import java.io.BufferedWriter;
@@ -10,47 +5,6 @@ import java.io.FileWriter;
 import java.nio.file.Paths;
 import java.nio.file.Files;
 
-// This class represents a node in a JSON DOM. Here is an example for how to use this class:
-//
-// class Submarine
-// {
-//     boolean atomic;
-//     int crewSize;
-//     double depth;
-//     Periscope peri;
-//     ArrayList<Torpedo> ammo;
-//
-//
-//     // Unmarshaling constructor
-//     Submarine(Json ob)
-//     {
-//         atomic = ob.getBool("atomic");
-//         crewSize = (int)ob.getLong("crewSize");
-//         depth = ob.getDouble("depth");
-//         peri = new Periscope(ob.get("peri"));
-//         ammo = new ArrayList<Torpedo>();
-//         Json tmpList = ob.get("ammo");
-//         for(int i = 0; i < tmpList.size(); i++)
-//             ammo.add(new Torpedo(tmpList.get(i)));
-//     }
-//
-//
-//     // Marshals this object into a JSON DOM
-//     Json marshal()
-//     {
-//         Json ob = Json.newObject();
-//         ob.add("atomic", atomic);
-//         ob.add("crewSize", crewSize);
-//         ob.add("depth", depth);
-//         ob.add("peri", peri.marshal());
-//         Json tmpList = Json.newList();
-//         ob.add("ammo", tmpList);
-//         for(int i = 0; i < ammo.size(); i++)
-//             tmpList.add(ammo.get(i).marshal());
-//         return ob;
-//     }
-// }
-//
 public abstract class Json
 {
 	abstract void write(StringBuilder sb);
