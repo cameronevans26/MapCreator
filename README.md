@@ -22,4 +22,5 @@ A simple Java-based map editor that lets you design a map by placing objects wit
 ## How to Run
 
 1. Make sure you have Java installed
-2. Run `run.bat` for windows or `run.bash` for Linux
+2. Install all the files from the repository
+3. Run `run.bat` for windows or `run.bash` for Linux
