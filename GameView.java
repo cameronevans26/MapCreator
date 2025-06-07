@@ -197,12 +197,6 @@ class GameView extends JPanel
 		int x1 = 300 - horizontalScroll; // Adjust the x-coordinate
 		int y1 = 300 - verticalScroll; // Adjust the y-coordinate
 		g2d.drawString(text, x1, y1);
-        
-        //loop through Arraylist (using iterator) through 'things' while drawing each one
-		// Draw the image so that its bottom center is at (x,y)
-		//int w = this.turtle_image.getWidth();
-		//int h = this.turtle_image.getHeight();
-		//g.drawImage(this.turtle_image, model.turtle_x - w / 2, model.turtle_y - h, null);
 	}
 
 	public Json marshal()
